@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ $1 = "" ]
+then
+	dbname="ereg";
+else	
+	dbname=$1;
+fi;
+
+if [ $2 = "" ]
+then
+	path="/home/michal/ereg_dump.sql";
+else	
+	path=$2;
+fi;
+ 
+export PGPASSWORD='password';
+psql -U postgres -c "CREATE DATABASE \""$dbname"\";"
+psql -U postgres -d $dbname -c "drop schema public cascade;create schema public;"
+psql -U postgres -d $dbname -f $path

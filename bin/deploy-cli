@@ -1,0 +1,15 @@
+#!/bin/bash
+# takes relative or absolute path to file as first argument.
+source /etc/environment
+undeploy "$@"
+
+deploymentDir='/home/michal/deployments'
+dir=`dirname $1`
+filename=`basename $1`
+echo "Current dir is "`pwd`
+echo "Changing dir to "$dir
+cd $dir
+
+echo "Deploying $filename using CLI"
+sudo -u wildfly $JBOSS_HOME/bin/jboss-cli.sh --connect --command="deploy --force $filename"
+echo "done."

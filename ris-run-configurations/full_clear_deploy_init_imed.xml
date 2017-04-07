@@ -1,0 +1,20 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="full clear deploy init imed" type="BashConfigurationType" factoryName="Bash" singleton="true">
+    <option name="INTERPRETER_OPTIONS" value="-c" />
+    <option name="INTERPRETER_PATH" value="/bin/bash" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ris_init" />
+    <option name="PARENT_ENVS" value="true" />
+    <option name="SCRIPT_NAME" value="echo &quot;clear deploy init imed done.&quot;" />
+    <option name="PARAMETERS" value="" />
+    <module name="" />
+    <envs>
+      <env name="PG_PASSWORD" value="postgres" />
+    </envs>
+    <method>
+      <option name="Make" enabled="false" />
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="clear_data" run_configuration_type="BashConfigurationType" />
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="ris-deploy-cli" run_configuration_type="BashConfigurationType" />
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="init imed" run_configuration_type="BashConfigurationType" />
+    </method>
+  </configuration>
+</component>

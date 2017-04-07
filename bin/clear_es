@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo
+echo 'Clearing elasticsearch...'
+curl -XDELETE "localhost:9200/*"

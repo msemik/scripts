@@ -1,0 +1,14 @@
+#!/bin/bash
+
+sudo service-wildfly "10.0.0.Final" stop
+sudo service-wildfly "9.0.1.Final" stop
+sudo service-wildfly "10.0.0.Final" stop
+sudo service-wildfly "9.0.1.Final" stop
+sudo service-elasticsearch "-2.2.0" stop
+sudo service-elasticsearch '' stop
+
+sudo replace-db ris-feature-test ris
+cd /home/michal/workspace/teleris_java_feature-test/
+deploy target/ris.war
+sudo service-elasticsearch '' start
+sudo service-wildfly "9.0.1.Final" start

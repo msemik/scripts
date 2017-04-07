@@ -1,0 +1,13 @@
+#!/bin/bash
+
+d=`pwd`; 
+if ! [[ -z $1 ]]
+then
+	d=$1;
+fi;
+
+echo "Chaning dir to "$d;
+cd $d;
+
+export PG_PASSWORD=postgres
+echo "postgres" | ./clear_data.sh

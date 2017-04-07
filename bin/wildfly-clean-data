@@ -1,0 +1,12 @@
+#!/bin/bash
+# takes relative or absolute path to file as first argument.
+
+echo "Removing /opt/wildfly-10.0.0.Final/standalone/data/*"
+echo "Removing /opt/wildfly-9.0.0.Final-klaster/standalone/data/*"
+echo "Removing /opt/wildfly-9.0.1.Final/standalone/data/*"
+echo "Removing /opt/wildfly-9.0.2.Final/standalone/data/*"
+
+sudo rm -rf "/opt/wildfly-10.0.0.Final/standalone/data/*"
+sudo rm -rf "/opt/wildfly-9.0.0.Final-klaster/standalone/data/*"
+sudo rm -rf "/opt/wildfly-9.0.1.Final/standalone/data/*"
+sudo rm -rf "/opt/wildfly-9.0.2.Final/standalone/data/*"

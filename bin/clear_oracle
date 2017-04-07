@@ -1,0 +1,44 @@
+#!/bin/bash
+
+cd /home/michal/workspace/ris_init/
+
+ORACLE_HOST='localhost';
+ORACLE_PORT=1521;
+ORACLE_SID='xe';
+
+#User which is going to be dropped
+ORACLE_USERNAME='MICHALS';
+ORACLE_PASSWORD='test1234';
+ORACLE_SCHEMA=$ORACLE_USERNAME;
+
+#User which is going to execute drop user command
+ORACLE_SYSDBA_USERNAME='sys';
+ORACLE_SYDBA_PASSWORD='oracle';
+
+sqlplus $ORACLE_SYSDBA_USERNAME'/'$ORACLE_SYDBA_PASSWORD'@'$ORACLE_HOST':'$ORACLE_PORT'/'$ORACLE_SID AS sysdba <<EOF 
+
+BEGIN
+  FOR id_info IN 
+  	(SELECT (sid || ',' || serial#) as session_identifier FROM v\$session WHERE username = '$ORACLE_USERNAME')
+  LOOP
+    EXECUTE IMMEDIATE ('alter system kill session ''' || id_info.session_identifier || '''');
+  END LOOP;
+END;
+/
+BEGIN 
+  EXECUTE IMMEDIATE 'drop user $ORACLE_USERNAME CASCADE';
+  EXECUTE IMMEDIATE 'create user $ORACLE_USERNAME identified by $ORACLE_PASSWORD';
+  EXECUTE IMMEDIATE 'grant all privileges to $ORACLE_USERNAME';
+  EXECUTE IMMEDIATE 'commit';
+END;
+/
+EXIT; 
+EOF
+
+echo
+echo 'Clearing elasticsearch...'
+curl -XDELETE "localhost:9200/*"
+
+echo
+echo
+echo "KONIEC"

@@ -1,0 +1,19 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="init imed oracle" type="BashConfigurationType" factoryName="Bash" singleton="true">
+    <option name="INTERPRETER_OPTIONS" value="-c" />
+    <option name="INTERPRETER_PATH" value="/bin/bash" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ris_init" />
+    <option name="PARENT_ENVS" value="true" />
+    <option name="SCRIPT_NAME" value="./init_imed24.sh" />
+    <option name="PARAMETERS" value="" />
+    <module name="" />
+    <envs>
+      <env name="DB_VENDOR" value="oracle" />
+      <env name="ORACLE_USERNAME" value="MICHALS" />
+      <env name="ORACLE_SCHEMA" value="MICHALS" />
+    </envs>
+    <method>
+      <option name="Make" enabled="false" />
+    </method>
+  </configuration>
+</component>

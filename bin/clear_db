@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export PGPASSWORD='password';
+psql -U postgres -d ereg -c "drop schema public cascade;create schema public;"

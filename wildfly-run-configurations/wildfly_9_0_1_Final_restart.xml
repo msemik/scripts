@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="wildfly 9.0.1.Final restart" type="BashConfigurationType" factoryName="Bash" singleton="true">
+    <option name="INTERPRETER_OPTIONS" value="-c" />
+    <option name="INTERPRETER_PATH" value="/bin/bash" />
+    <option name="WORKING_DIRECTORY" value="" />
+    <option name="PARENT_ENVS" value="true" />
+    <option name="SCRIPT_NAME" value="sudo service-wildfly 9.0.1.Final restart" />
+    <option name="PARAMETERS" value="" />
+    <module name="" />
+    <envs />
+    <method>
+      <option name="Make" enabled="false" />
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="elastic search 1.7.0 restart" run_configuration_type="BashConfigurationType" />
+    </method>
+  </configuration>
+</component>

@@ -1,0 +1,46 @@
+#!/bin/bash
+
+src=$1;
+dst=$2;
+
+if [ -z $src ] || [ -z $dst ]
+then
+	echo "Src and dst must be given."
+	exit 1; 
+fi;
+
+#sudo service postgresql restart
+export PGPASSWORD='password';
+psql -U postgres -c "SELECT pg_terminate_backend(pg_stat_activity.pid)
+FROM pg_stat_activity
+WHERE pid <> pg_backend_pid();";
+
+sudo -u postgres dropdb $dst
+sudo -u postgres createdb -O postgres -T $src $dst
+
+echo "done, replaced "$dst" with "$src;
+
+
+echo "copying ES state";
+
+replaceEs () {
+	es_dir=$1;
+	deploymentName=$2;
+	backupName=$3;
+	echo "Recreating dir "$es_dir"/"$backupName;
+	rm -rf $es_dir"/"$backupName;
+	sudo -u elasticsearch mkdir $es_dir"/"$backupName;
+
+	echo "Copying $es_dir/$deploymentName/* to $es_dir/$backupName/"
+	sudo -u elasticsearch cp -r "$es_dir/$deploymentName/*" $es_dir/$backupName/
+	sudo -u elasticsearch cp -r "$es_dir/$deploymentName/nodes" $es_dir/$backupName/
+
+
+
+
+}
+
+replaceEs "/var/lib/elasticsearch" $src $dst
+replaceEs "/opt/elasticsearch-2.2.0/data" $src $dst
+
+echo "done. ";

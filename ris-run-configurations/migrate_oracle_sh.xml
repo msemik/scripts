@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="migrate-oracle.sh" type="BashConfigurationType" factoryName="Bash" singleton="true">
+    <option name="INTERPRETER_OPTIONS" value="bash" />
+    <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/resources/sql" />
+    <option name="PARENT_ENVS" value="true" />
+    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/resources/sql/migrate-oracle.sh" />
+    <option name="PARAMETERS" value="" />
+    <module name="ris" />
+    <envs>
+      <env name="LD_LIBRARY_PATH" value="/usr/lib/oracle/12.1/client64/lib/" />
+    </envs>
+    <method />
+  </configuration>
+</component>

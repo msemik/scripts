@@ -1,0 +1,19 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="clear_data.sh oracle" type="BashConfigurationType" factoryName="Bash" singleton="true">
+    <option name="INTERPRETER_OPTIONS" value="" />
+    <option name="INTERPRETER_PATH" value="/bin/bash" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ris_init" />
+    <option name="PARENT_ENVS" value="true" />
+    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ris_init/clear_data.sh" />
+    <option name="PARAMETERS" value="oracle" />
+    <module name="ris_init" />
+    <envs>
+      <env name="ORACLE_USERNAME" value="MICHALS" />
+      <env name="ORACLE_PASSWORD" value="test1234" />
+      <env name="ORACLE_HOST" value="localhost" />
+      <env name="ORACLE_SCHEMA" value="MICHALS" />
+      <env name="DB_VENDOR" value="oracle" />
+    </envs>
+    <method />
+  </configuration>
+</component>

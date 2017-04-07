@@ -1,0 +1,17 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="clear_oracle" type="BashConfigurationType" factoryName="Bash" singleton="true">
+    <option name="INTERPRETER_OPTIONS" value="-c" />
+    <option name="INTERPRETER_PATH" value="/bin/bash" />
+    <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    <option name="PARENT_ENVS" value="true" />
+    <option name="SCRIPT_NAME" value="$USER_HOME$/bin/clear_oracle" />
+    <option name="PARAMETERS" value="target/ris.war" />
+    <module name="ris_init" />
+    <envs>
+      <env name="LD_LIBRARY_PATH" value="/usr/lib/oracle/12.1/client64/lib/:/opt/instantclient_12_1" />
+    </envs>
+    <method>
+      <option name="Make" enabled="false" />
+    </method>
+  </configuration>
+</component>
