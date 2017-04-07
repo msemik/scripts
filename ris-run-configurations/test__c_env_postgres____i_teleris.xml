@@ -1,0 +1,23 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="test -c env-postgres   -i teleris" type="Application" factoryName="Application" singleton="true">
+    <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <option name="MAIN_CLASS_NAME" value="Main" />
+    <option name="VM_PARAMETERS" value="" />
+    <option name="PROGRAM_PARAMETERS" value="-c env-postgres   -i teleris" />
+    <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../ris_integration_tests" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <option name="ENABLE_SWING_INSPECTOR" value="false" />
+    <option name="ENV_VARIABLES" />
+    <option name="PASS_PARENT_ENVS" value="true" />
+    <module name="ris_test" />
+    <envs>
+      <env name="PG_PORT" value="5432" />
+      <env name="PG_HOST" value="localhost" />
+      <env name="PG_USERNAME" value="postgres" />
+      <env name="PG_PASSWORD" value="postgres" />
+      <env name="PG_DBNAME" value="ris" />
+    </envs>
+    <method />
+  </configuration>
+</component>

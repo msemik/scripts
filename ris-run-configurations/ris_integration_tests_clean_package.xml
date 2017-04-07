@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="dd install -DskipTests" type="MavenRunConfiguration" factoryName="Maven" singleton="true">
+  <configuration default="false" name="ris_integration_tests clean package" type="MavenRunConfiguration" factoryName="Maven" singleton="true">
     <MavenSettings>
       <option name="myGeneralSettings" />
       <option name="myRunnerSettings" />
@@ -11,15 +11,14 @@
           <option name="goals">
             <list>
               <option value="clean" />
-              <option value="install" />
-              <option value="-DskipTests" />
+              <option value="package" />
             </list>
           </option>
           <option name="profilesMap">
             <map />
           </option>
           <option name="resolveToWorkspace" value="false" />
-          <option name="workingDirPath" value="$PROJECT_DIR$/../dd_framework_old" />
+          <option name="workingDirPath" value="$PROJECT_DIR$/../ris_integration_tests" />
         </MavenRunnerParameters>
       </option>
     </MavenSettings>
