@@ -4,7 +4,7 @@
     <option name="INTERPRETER_PATH" value="/bin/bash" />
     <option name="WORKING_DIRECTORY" value="" />
     <option name="PARENT_ENVS" value="true" />
-    <option name="SCRIPT_NAME" value="sudo $USER_HOME$/bin/service-wildfly 10.0.0.Final stop" />
+    <option name="SCRIPT_NAME" value="sudo service-wildfly 10.0.0.Final stop" />
     <option name="PARAMETERS" value="" />
     <module name="" />
     <envs />

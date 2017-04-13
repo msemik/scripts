@@ -4,7 +4,7 @@
     <option name="INTERPRETER_PATH" value="/bin/bash" />
     <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
     <option name="PARENT_ENVS" value="true" />
-    <option name="SCRIPT_NAME" value="$USER_HOME$/bin/clear_oracle" />
+    <option name="SCRIPT_NAME" value="clear_oracle" />
     <option name="PARAMETERS" value="target/ris.war" />
     <module name="ris_init" />
     <envs>
