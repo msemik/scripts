@@ -13,6 +13,7 @@
               <option value="clean" />
               <option value="package" />
               <option value="-DskipTests" />
+              <option value="-Dmaven.test.skip=true" />
             </list>
           </option>
           <option name="profilesMap">
