@@ -1,0 +1,1 @@
+sudo /usr/bin/jvisualvm --cp:a $JBOSS_HOME/bin/client/jboss-cli-client.jar
