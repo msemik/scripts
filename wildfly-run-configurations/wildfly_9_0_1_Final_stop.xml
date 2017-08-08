@@ -4,12 +4,11 @@
     <option name="INTERPRETER_PATH" value="/bin/bash" />
     <option name="WORKING_DIRECTORY" value="" />
     <option name="PARENT_ENVS" value="true" />
-    <option name="SCRIPT_NAME" value="sudo service-wildfly 9.0.1.Final stop" />
+    <option name="SCRIPT_NAME" value="sudo service-wildfly stop" />
     <option name="PARAMETERS" value="" />
     <module name="" />
     <envs />
     <method>
-      <option name="Make" enabled="false" />
       <option name="RunConfigurationTask" enabled="true" run_configuration_name="elastic search 1.7.0 restart" run_configuration_type="BashConfigurationType" />
     </method>
   </configuration>

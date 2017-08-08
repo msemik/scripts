@@ -1,4 +1,4 @@
 #!/bin/bash
 
 
-sudo service wildfly-$1 $2
+sudo service wildfly $1 $2
