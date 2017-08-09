@@ -9,6 +9,6 @@ fi;
 echo "Chaning dir to "$d;
 cd $d;
 
-export PGPASSWORD=postgres
-export PG_PASSWORD=postgres
-echo "postgres" | ./clear_data.sh
+export PGPASSWORD=1q2w3e4r
+export PG_PASSWORD=1q2w3e4r
+./clear_data.sh

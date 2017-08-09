@@ -8,8 +8,6 @@
     <option name="PARAMETERS" value="target/ris.war" />
     <module name="" />
     <envs />
-    <method>
-      <option name="Make" enabled="false" />
-    </method>
+    <method />
   </configuration>
 </component>

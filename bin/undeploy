@@ -12,5 +12,5 @@ echo "rm "$deploymentDir"/"$filename"*"
 rm $deploymentDir"/"$filename*
 
 echo "Undeploying CLI deployment ..."
-sudo -u wildfly $JBOSS_HOME/bin/jboss-cli.sh --connect --command="undeploy $filename"
+sudo $JBOSS_HOME/bin/jboss-cli.sh --connect --command="undeploy $filename"
 echo "done."

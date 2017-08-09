@@ -15,7 +15,7 @@
       <env name="PG_PORT" value="5432" />
       <env name="PG_HOST" value="localhost" />
       <env name="PG_USERNAME" value="postgres" />
-      <env name="PG_PASSWORD" value="postgres" />
+      <env name="PG_PASSWORD" value="1q2w3e4r" />
       <env name="PG_DBNAME" value="ris" />
     </envs>
     <method />

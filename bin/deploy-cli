@@ -11,5 +11,5 @@ echo "Changing dir to "$dir
 cd $dir
 
 echo "Deploying $filename using CLI"
-sudo -u wildfly $JBOSS_HOME/bin/jboss-cli.sh --connect --command="deploy --force $filename"
+sudo  $JBOSS_HOME/bin/jboss-cli.sh --connect --command="deploy --force $filename"
 echo "done."
