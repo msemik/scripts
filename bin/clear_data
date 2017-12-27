@@ -9,6 +9,7 @@ fi;
 echo "Chaning dir to "$d;
 cd $d;
 
+. /etc/bash.bashrc
 export PGPASSWORD=1q2w3e4r
 export PG_PASSWORD=1q2w3e4r
 ./clear_data.sh

@@ -8,10 +8,8 @@
     <option name="PARAMETERS" value="target/ris.war" />
     <module name="ris_init" />
     <envs>
-      <env name="LD_LIBRARY_PATH" value="/usr/lib/oracle/12.1/client64/lib/:/opt/instantclient_12_1" />
+      <env name="LD_LIBRARY_PATH" value="/usr/lib/oracle/12.2/client64/lib/" />
     </envs>
-    <method>
-      <option name="Make" enabled="false" />
-    </method>
+    <method />
   </configuration>
 </component>

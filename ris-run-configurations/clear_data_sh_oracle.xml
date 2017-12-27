@@ -13,6 +13,7 @@
       <env name="ORACLE_HOST" value="localhost" />
       <env name="ORACLE_SCHEMA" value="MICHALS" />
       <env name="DB_VENDOR" value="oracle" />
+      <env name="LD_LIBRARY_PATH" value="/usr/lib/oracle/12.2/client64/lib/" />
     </envs>
     <method />
   </configuration>
